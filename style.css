@@ -14,9 +14,13 @@ html,body{
     
 
 }
-::-webkit-scrollbar {
+/* #main{
+    background-color: #151515;
+    
+} */
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 #crsr{
     height: 2.3vw;
     width: 2.3vw;
@@ -74,7 +78,7 @@ html,body{
 }
 #main{
     position: relative;
-    background-color: #030303;
+    background-color: #151515;
 }
 #page1{
     height: 100vh;
@@ -245,6 +249,16 @@ html,body{
 #page4-content h1{
     font-size: 6vw;
     text-transform: uppercase;
+    position: relative;
+}
+#page4-content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    left: -12%;
+    top:8%;
+    font-family: "silk serif"
 }
 #page4-content .underline{
     height: 2px;
@@ -304,7 +318,9 @@ html,body{
     min-height: 100vh;
     width: 100%;
     /* padding: 5vw 0; */
+    /* margin-top: 3vh; */
     background-color: #151515;
+    position: relative;
     
 }
 .underline1{
@@ -316,4 +332,124 @@ html,body{
     margin-top: 5vw;
     /* background-color: #151515; */
 
+}
+.elem{
+    /* background-color: red; */
+    white-space:nowrap;
+    overflow-x: hidden;
+    margin-bottom: 1vw;
+}
+.elem h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px  #fff;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 16px;
+    font-weight: 100;
+    animation-name: anime1;
+    animation-duration: 10s;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+}
+@keyframes anime1 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+.elem2{
+    /* background-color: red; */
+    white-space:nowrap;
+    overflow-x: hidden;
+    margin-bottom: 1vw;
+}
+.elem2 h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px  #fff;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: translateX(-100%);
+
+    margin-right: 16px;
+    font-weight: 100;
+    animation-name: anime1;
+    animation-duration: 10s;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.elem span{
+    font-style: italic;
+    font-family: 'silk serif';
+    color: transparent;
+}
+.elem2 span{
+    font-style: italic;
+    font-family: 'silk serif';
+    color: transparent;
+}
+#footer{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+padding-left: 28vw;
+    background: #151515;
+    padding-top: 10vh;
+    padding-right: 10vw;
+}
+#footer h1{
+    font-size: 8vw;
+    /* width: 60vw; */
+    text-transform: uppercase;
+    /* margin-left: 28vw; */
+    /* background-color: blue; */
+    position: relative;
+}
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    left: -12%;
+    top:8%;
+    font-family: "silk serif"
+}
+.underline{
+    height: 2px;
+    width: 100%;
+    background-color: #ffffffb0;
+    margin: 2vw 0;
+}
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    margin-bottom: 3vw;
+
+}
+#footer-div h6{
+    font-size: 1vw;
+    margin-bottom: 1vw;
+
+}
+.box{
+    width: 30%;
+}
+#footer-div h5{
+    font-size: 1.4vw;
+    font-weight: 500;
+    margin: 0.2vh 0;
+    
+}
+#footerh{
+    font-weight: 500;
+    font-size: 1vw;
+    position: relative;
+    top: 25%;
 }
