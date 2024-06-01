@@ -185,3 +185,16 @@ document.querySelector("#hero3").addEventListener("mouseleave",function(){
         opacity:0
     })
 })
+
+// document.querySelector("#footer h1").addEventListener("mouseenter",function(){
+//     gsap.from("#footer h1",{
+//         opacity:0,
+//         duration:1,
+//         onStart:function(){
+//             $('.tlt').textillate({ in: { effect: 'fadeIn' } });
+
+//         }
+
+
+//     })
+// })
